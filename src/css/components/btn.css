@@ -1,0 +1,27 @@
+.btn {
+  @apply inline-block py-3 px-12 transition-colors duration-200 cursor-pointer rounded;
+}
+
+.btn-primary{
+  @apply bg-primary-500 text-white;
+
+  &:hover {
+    @apply bg-primary-700;
+  }
+}
+
+.btn-outline{
+  @apply border border-primary-600 text-primary-500;
+
+  &:hover {
+    @apply bg-primary-700 text-white;
+  }
+}
+
+.btn-link{
+  @apply p-1 mx-2 rounded-none border-b text-primary-600;
+
+  &:hover {
+    @apply border-primary-700 text-primary-700;
+  }
+}

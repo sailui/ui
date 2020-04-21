@@ -1,0 +1,7 @@
+.form-control {
+  @apply block border border-gray-300 p-3 w-full mb-2 rounded outline-none transition-colors duration-200;
+
+  &:focus{
+    @apply border-primary-500;
+  }
+}

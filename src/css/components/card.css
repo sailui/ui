@@ -1,0 +1,15 @@
+.card{
+  @apply bg-white rounded shadow-lg border border-gray-200;
+}
+
+.card-body{
+  @apply p-6;
+}
+
+.card-header{
+  @apply px-6 py-4 border-b;
+}
+
+.card-footer{
+  @apply px-6 py-4 border-t;
+}

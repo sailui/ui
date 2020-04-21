@@ -1,0 +1,27 @@
+.badge {
+  @apply inline-block py-0 px-2 rounded text-sm font-bold;
+}
+
+.badge-primary {
+  @apply bg-primary-600 text-white;
+}
+
+.badge-success {
+  @apply bg-green-500 text-white;
+}
+
+.badge-danger {
+  @apply bg-red-500 text-white;
+}
+
+.badge-warning {
+  @apply bg-yellow-400 text-black;
+}
+
+.badge-light {
+  @apply bg-gray-200 text-black;
+}
+
+.badge-dark {
+  @apply bg-gray-800 text-white;
+}
