@@ -1,27 +1,23 @@
 .btn {
-  @apply inline-block py-3 px-12 transition-colors duration-200 cursor-pointer rounded;
-}
-
-.btn-primary{
-  @apply bg-primary-500 text-white;
+  @apply inline-block py-2 px-6 transition-colors duration-200 cursor-pointer rounded bg-black text-white;
 
   &:hover {
-    @apply bg-primary-700;
+    @apply bg-gray-800;
   }
+}
+
+.btn-sm {
+  @apply py-1 px-4 text-sm;
+}
+
+.btn-lg {
+  @apply py-3 px-10 text-lg font-bold;
 }
 
 .btn-outline{
-  @apply border border-primary-600 text-primary-500;
+  @apply border border-black text-black bg-transparent;
 
   &:hover {
-    @apply bg-primary-700 text-white;
-  }
-}
-
-.btn-link{
-  @apply p-1 mx-2 rounded-none border-b text-primary-600;
-
-  &:hover {
-    @apply border-primary-700 text-primary-700;
+    @apply bg-gray-800 text-white;
   }
 }

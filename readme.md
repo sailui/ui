@@ -6,7 +6,11 @@ A collection of basic UI components built on Tailwind.
 If you're already using Tailwind and you find yourself repeatedly creating 
 a few common component classes for every project, **Sail UI** is for you.
 
-No more creating `.btn`, `.card` and `.form-control`.
+This package helps you with a few basic components, so that you can start 
+building your prototype / draft / MVP before you get down to polishing your
+fully custom design. 
+
+Use `.btn`, `.card` and other classes you're familiar with to get you started and customize them later when you need to.  
 
 ### Newcomers
 If you're moving away from another framework to Tailwind
@@ -25,7 +29,7 @@ Import the `sailui.css` file after your `@tailwind components` and before your `
 
 @tailwind components;
 
-@import '../node_modules/sailui/components.css';
+@import 'sailui/components.css';
 
 @tailwind utilities;
 ```
@@ -36,15 +40,19 @@ Start using Sail UI component classes just like how you're used to.
 <a href="/" class="btn"></a>
 ```
 
-## List of Components
+## What's Included 
+- Sensible default styles for headings, paragraphs, and other elements of typography. 
+- Basic components:
 ```
 .btn
 .card
-.custom-select
+.alert
+.badge
+.input
+.select
+.field
+.note
 ```
-
-
-
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

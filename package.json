@@ -1,7 +1,7 @@
 {
   "name": "sailui",
   "version": "0.1.0",
-  "description": "A UI kit built on Tailwind.",
+  "description": "Basic UI components for Tailwind.",
   "main": "index.js",
   "repository": "https://github.com/sailui/ui.git",
   "keywords": [

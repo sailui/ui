@@ -1,14 +1,17 @@
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
+
 @import "./components/typography.css";
+@import "./components/container.css";
 @import "./components/card.css";
 @import "./components/label.css";
 @import "./components/alert.css";
 @import "./components/badge.css";
 @import "./components/btn.css";
-@import "./components/form-control.css";
-@import "./components/form-group.css";
-@import "./components/custom-select.css";
+@import "components/input.css";
+@import "components/field.css";
+@import "components/select.css";
+@import "components/note.css";
 
 @import "tailwindcss/utilities";
