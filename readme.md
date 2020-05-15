@@ -1,8 +1,10 @@
 # Sail UI
-A collection of basic UI components built on Tailwind. 
-
 [![npm](https://img.shields.io/npm/v/sailui)](https://www.npmjs.com/package/sailui)
 [![GitHub license](https://img.shields.io/github/license/sailui/ui)](https://github.com/sailui/ui/blob/master/LICENSE.md)
+
+A collection of basic UI components built on Tailwind CSS. 
+
+[Demo](https://sailui.github.io/).
 
 ## Who's this for?
 ### Serial Users
