@@ -1,7 +1,7 @@
 # Sail UI
 A collection of basic UI components built on Tailwind. 
 
-![npm](https://img.shields.io/npm/v/sailui)
+[![npm](https://img.shields.io/npm/v/sailui)](https://www.npmjs.com/package/sailui)
 [![GitHub license](https://img.shields.io/github/license/sailui/ui)](https://github.com/sailui/ui/blob/master/LICENSE.md)
 
 ## Who's this for?
