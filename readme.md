@@ -1,6 +1,9 @@
 # Sail UI
 A collection of basic UI components built on Tailwind. 
 
+![npm](https://img.shields.io/npm/v/sailui)
+[![GitHub license](https://img.shields.io/github/license/sailui/ui)](https://github.com/sailui/ui/blob/master/LICENSE.md)
+
 ## Who's this for?
 ### Serial Users
 If you're already using Tailwind and you find yourself repeatedly creating 
