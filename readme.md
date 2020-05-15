@@ -27,6 +27,8 @@ Import the `sailui.css` file after your `@tailwind components` and before your `
 ```postcss
 @tailwind base;
 
+@import 'sailui/base.css';
+
 @tailwind components;
 
 @import 'sailui/components.css';

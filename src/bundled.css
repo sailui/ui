@@ -1,6 +1,6 @@
 @import "tailwindcss/base";
 
-@import "bundled.css";
+@import "base.css";
 
 @import "tailwindcss/components";
 
