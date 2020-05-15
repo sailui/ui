@@ -6,7 +6,7 @@ let plugins = [
   require('postcss-nested')
 ]
 
-mix.postCss('src/base.css', 'dist/', plugins)
-  .postCss('src/components.css', 'dist/', plugins)
-  .postCss('src/bundled.css', 'dist/', plugins)
+mix.postCss('src/base.css', '', plugins)
+  .postCss('src/components.css', '', plugins)
+  .postCss('src/bundled.css', '', plugins)
 
