@@ -29,3 +29,7 @@ h6, .h6{
 p{
   @apply mb-4;
 }
+
+label{
+  @apply block mb-1;
+}

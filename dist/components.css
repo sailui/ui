@@ -1,0 +1,166 @@
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-width: 1px;
+  border-color: #edf2f7;
+}
+
+.alert {
+  border-width: 1px;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.alert-blue {
+  background-color: #ebf8ff;
+  border-color: #63b3ed;
+  color: #2c5282;
+}
+
+.alert-green {
+  background-color: #f0fff4;
+  border-color: #68d391;
+  color: #276749;
+}
+
+.alert-yellow {
+  background-color: #fffff0;
+  border-color: #f6e05e;
+  color: #975a16;
+}
+
+.alert-red {
+  background-color: #fff5f5;
+  border-color: #fc8181;
+  color: #c53030;
+}
+
+.badge {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: #000;
+  color: #fff;
+}
+
+.badge-light {
+  background-color: #edf2f7;
+  color: #000;
+}
+
+.badge-blue {
+  background-color: #4299e1;
+  color: #fff;
+}
+
+.badge-green {
+  background-color: #48bb78;
+  color: #fff;
+}
+
+.badge-yellow {
+  background-color: #f6e05e;
+  color: #000;
+}
+
+.badge-red {
+  background-color: #f56565;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:hover {
+    background-color: #2d3748;
+  }
+
+.btn-sm {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.btn-outline{
+  border-width: 1px;
+  border-color: #000;
+  color: #000;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #2d3748;
+    color: #fff;
+  }
+
+.input {
+  display: block;
+  border-width: 1px;
+  border-color: #e2e8f0;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  outline: 0;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+}
+
+.input:focus{
+    border-color: #000;
+  }
+
+.field {
+  margin-bottom: 0.75rem;
+}
+
+.select{
+  padding-right: 1.75rem;
+  vertical-align: middle;
+  background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 0.75rem center/16px 18px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.note{
+  color: #a0aec0;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

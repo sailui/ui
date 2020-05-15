@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+
+@import "bundled.css";
+
+@import "tailwindcss/components";
+
+@import "components.css";
+
+@import "tailwindcss/utilities";
