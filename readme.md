@@ -47,9 +47,9 @@ Start using Sail UI component classes just like how you're used to.
 <a href="/" class="btn"></a>
 ```
 
-## What's Included 
-- Sensible default styles for headings, paragraphs, and other elements of typography. 
-- Basic components:
+## What's Included
+### Basic Components
+These components are included:
 ```
 .btn
 .card
@@ -60,6 +60,23 @@ Start using Sail UI component classes just like how you're used to.
 .field
 .note
 ```
+
+### Typography
+Sensible default styles are applied to headings, paragraphs, and other elements of typography. 
+These are the covered elements:
+```
+h1
+h2
+h3
+h4
+h5
+h6
+p
+label
+``` 
+
+### Container
+The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind. 
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
