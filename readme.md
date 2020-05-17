@@ -50,30 +50,105 @@ Start using Sail UI component classes just like how you're used to.
 ## What's Included
 ### Basic Components
 These components are included:
+
+- [.btn](#buttons)  
+- [.input](#input)  
+- [.select](#select)  
+- [.field](#input)  
+- [.note](#input)  
+- [.card](#cards)  
+- [.alert](#alerts)  
+- [.badge](#badges)  
+
+#### Buttons
+```html
+<button class="btn">Sign Up</button>
+
+<button class="btn btn-outline">Find Out More</button>
 ```
-.btn
-.card
-.alert
-.badge
-.input
-.select
-.field
-.note
+
+#### Input
+```html
+<div class="field">
+    <label for="email">Email</label>
+
+    <input type="text" class="input" placeholder="johnny@example.com" id="email">
+
+    <div class="note">We won't send you spam.</div>
+</div>
+```
+
+#### Select
+```html
+<div class="field">
+    <label for="category">Category</label>
+
+    <select class="input select" id="category">
+        <option>Best Customer</option>
+        <option>Bester Customer</option>
+        <option>Bestest Customer</option>
+    </select>
+</div>
+```
+
+#### Cards
+```html
+<div class="card">
+    Lorem ipsum dolor sit amet...
+</div>
+```
+
+#### Alerts
+```html
+<div class="alert">
+    <strong>Normal stuff!</strong> zero concerns.
+</div>
+
+<div class="alert alert-blue">
+    <strong>All is clear!</strong> So far so good.
+</div>
+
+<div class="alert alert-green">
+    <strong>Fantastic!</strong> You did it.
+</div>
+
+<div class="alert alert-yellow">
+    <strong>Watch out!</strong> Things are going down south.
+</div>
+
+<div class="alert alert-red">
+    <strong>Too late!</strong> It's hit the fan.
+</div>
+```
+
+#### Badges
+```html
+<span class="badge">Default</span>
+
+<span class="badge badge-light">Light</span>
+
+<span class="badge badge-blue">Blue</span>
+
+<span class="badge badge-green">Green</span>
+
+<span class="badge badge-yellow">Yellow</span>
+
+<span class="badge badge-red">Red</span>
 ```
 
 ### Typography
 Sensible default styles are applied to headings, paragraphs, and other elements of typography. 
 These are the covered elements:
-```
-h1
-h2
-h3
-h4
-h5
-h6
-p
-label
-``` 
+
+- h1
+- h2
+- h3
+- h4
+- h5
+- h6
+- p
+- label
+
 
 ### Container
 The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind. 
