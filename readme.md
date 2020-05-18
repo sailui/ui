@@ -28,7 +28,7 @@ build all of those lovely components from scratch yourself,
 npm install sailui
 ```
 
-Import the `sailui.css` file after your `@tailwind components` and before your `@tailwind components` directives.
+Import `sailui/base.css` and `sailui/components.css` after `@tailwind base` and `@tailwind components` directives respectively.
 ```postcss
 @tailwind base;
 
@@ -148,7 +148,6 @@ These are the covered elements:
 - h6
 - p
 - label
-
 
 ### Container
 The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind. 
