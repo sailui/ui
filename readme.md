@@ -30,15 +30,15 @@ npm install sailui
 
 Import `sailui/base.css` and `sailui/components.css` after `@tailwind base` and `@tailwind components` directives respectively.
 ```postcss
-@import "~tailwindcss/base.css";
+@import "tailwindcss/base";
 
-@import '~sailui/base.css';
+@import 'sailui/base';
 
-@import "~tailwindcss/components.css";
+@import "tailwindcss/components";
 
-@import '~sailui/components.css';
+@import 'sailui/components';
 
-@import "~tailwindcss/utilities.css";
+@import "tailwindcss/utilities";
 ```
 
 ## Usage
