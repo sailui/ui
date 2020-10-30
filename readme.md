@@ -119,14 +119,60 @@ You should refer to the [original documentation of `custom-forms`](https://tailw
 - [.form-textarea](#form-textarea)  
 
 #### Form Input
+```html
+<label class="block">
+    <span class="text-gray-700">Name</span>
+    <input class="form-input mt-1 block w-full">
+</label>
+```
 
 #### Form Select
+```html
+<label class="block">
+    <span class="text-gray-700">Pet of Choice</span>
+    <select class="form-select mt-1 block w-full">
+        <option>Cat</option>
+        <option>Catty</option>
+        <option>Kitty</option>
+        <option>Kat</option>
+    </select>
+</label>
+```
 
 #### Form Radio
+```html
+<div class="mt-4">
+    <span class="text-gray-700">Age Group</span>
+    <div class="mt-2">
+        <label class="inline-flex items-center">
+            <input type="radio" class="form-radio" name="age-group" value="cat">
+            <span class="ml-2">Cat</span>
+        </label>
+        <label class="inline-flex items-center ml-6">
+            <input type="radio" class="form-radio" name="age-group" value="kitty">
+            <span class="ml-2">Kitty</span>
+        </label>
+    </div>
+</div>
+```
 
 #### Form Checkbox
+```html
+<div class="flex mt-6">
+    <label class="flex items-center">
+        <input type="checkbox" class="form-checkbox">
+        <span class="ml-2">I agree to your <span class="underline">terms</span></span>.
+    </label>
+</div>
+```
 
 #### Form Textarea
+```html
+<label class="block mt-6">
+    <span class="text-gray-700">Notes</span>
+    <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Write something..."></textarea>
+</label>
+```
 
 ### Typography
 Sensible default styles are applied to headings, paragraphs, and other elements of typography. 
