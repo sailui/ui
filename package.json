@@ -1,7 +1,8 @@
 {
   "name": "sailui",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Basic UI components for Tailwind CSS.",
+  "main": "src/sailui.js",
   "repository": "https://github.com/sailui/ui.git",
   "keywords": [
     "ui",
@@ -15,8 +16,10 @@
     "Matt Daneshvar <matt.daneshvar@gmail.com>"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1",
+  "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  },
+  "peerDependencies": {
     "tailwindcss": "^1.9.5"
   },
   "scripts": {
