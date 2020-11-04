@@ -1,6 +1,6 @@
 {
   "name": "sailui",
-  "version": "0.2.2",
+  "version": "0.3.2",
   "description": "Basic UI components for Tailwind CSS.",
   "repository": "https://github.com/sailui/ui.git",
   "keywords": [
@@ -11,19 +11,16 @@
   ],
   "author": "Matt Daneshvar",
   "homepage": "https://sailui.github.io/",
-  "contributors": [ "Matt Daneshvar <matt.daneshvar@gmail.com>" ],
+  "contributors": [
+    "Matt Daneshvar <matt.daneshvar@gmail.com>"
+  ],
   "license": "MIT",
-  "dependencies": {
-    "tailwindcss": "^1.2.0"
-  },
   "devDependencies": {
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.1",
-    "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.4"
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "tailwindcss": "^1.9.5"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "npx tailwindcss build demo/styles.css -o demo/output.css",
     "watch": "npm run build -- --watch"
   }
 }

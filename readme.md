@@ -28,17 +28,15 @@ build all of those lovely components from scratch yourself,
 npm install sailui
 ```
 
-Import `sailui/base.css` and `sailui/components.css` after `@tailwind base` and `@tailwind components` directives respectively.
-```postcss
-@import "tailwindcss/base";
+Add `sailui` to your `tailwind.config.js` file:
+```js
+module.exports = {
+  // ...
+  plugins: [
+    require('sailui')(),
+  ]
+}
 
-@import 'sailui/base';
-
-@import "tailwindcss/components";
-
-@import 'sailui/components';
-
-@import "tailwindcss/utilities";
 ```
 
 ## Usage
@@ -52,10 +50,6 @@ Start using Sail UI component classes just like how you're used to.
 These components are included:
 
 - [.btn](#buttons)  
-- [.input](#input)  
-- [.select](#select)  
-- [.field](#input)  
-- [.note](#input)  
 - [.card](#cards)  
 - [.alert](#alerts)  
 - [.badge](#badges)  
@@ -65,30 +59,6 @@ These components are included:
 <button class="btn">Sign Up</button>
 
 <button class="btn btn-outline">Find Out More</button>
-```
-
-#### Input
-```html
-<div class="field">
-    <label for="email">Email</label>
-
-    <input type="text" class="input" placeholder="johnny@example.com" id="email">
-
-    <div class="note">We won't send you spam.</div>
-</div>
-```
-
-#### Select
-```html
-<div class="field">
-    <label for="category">Category</label>
-
-    <select class="input select" id="category">
-        <option>Best Customer</option>
-        <option>Bester Customer</option>
-        <option>Bestest Customer</option>
-    </select>
-</div>
 ```
 
 #### Cards
@@ -136,6 +106,74 @@ These components are included:
 <span class="badge badge-red">Red</span>
 ```
 
+### Forms
+Sail UI uses the [`custom-forms` plugin from Tailwind Labs](https://github.com/tailwindlabs/tailwindcss-custom-forms) 
+to style form elements. 
+
+You should refer to the [original documentation of `custom-forms`](https://tailwindcss-custom-forms.netlify.app/) for complete details, but to summarize, these elements are available:
+
+- [.form-input](#form-input)  
+- [.form-select](#form-select)  
+- [.form-radio](#form-radio)  
+- [.form-checkbox](#form-checkbox)  
+- [.form-textarea](#form-textarea)  
+
+#### Form Input
+```html
+<label class="block">
+    <span class="text-gray-700">Name</span>
+    <input class="form-input mt-1 block w-full">
+</label>
+```
+
+#### Form Select
+```html
+<label class="block">
+    <span class="text-gray-700">Pet of Choice</span>
+    <select class="form-select mt-1 block w-full">
+        <option>Cat</option>
+        <option>Catty</option>
+        <option>Kitty</option>
+        <option>Kat</option>
+    </select>
+</label>
+```
+
+#### Form Radio
+```html
+<div class="mt-4">
+    <span class="text-gray-700">Age Group</span>
+    <div class="mt-2">
+        <label class="inline-flex items-center">
+            <input type="radio" class="form-radio" name="age-group" value="cat">
+            <span class="ml-2">Cat</span>
+        </label>
+        <label class="inline-flex items-center ml-6">
+            <input type="radio" class="form-radio" name="age-group" value="kitty">
+            <span class="ml-2">Kitty</span>
+        </label>
+    </div>
+</div>
+```
+
+#### Form Checkbox
+```html
+<div class="flex mt-6">
+    <label class="flex items-center">
+        <input type="checkbox" class="form-checkbox">
+        <span class="ml-2">I agree to your <span class="underline">terms</span></span>.
+    </label>
+</div>
+```
+
+#### Form Textarea
+```html
+<label class="block mt-6">
+    <span class="text-gray-700">Notes</span>
+    <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Write something..."></textarea>
+</label>
+```
+
 ### Typography
 Sensible default styles are applied to headings, paragraphs, and other elements of typography. 
 These are the covered elements:
@@ -147,7 +185,6 @@ These are the covered elements:
 - h5
 - h6
 - p
-- label
 
 ### Container
 The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind. 

@@ -2,4 +2,3 @@ node_modules
 .idea
 package-lock.json
 mix-manifest.json
-index.html
