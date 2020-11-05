@@ -9,6 +9,6 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    require('../src/sailui')(),
+    require('../src/sailui'),
   ],
 }
