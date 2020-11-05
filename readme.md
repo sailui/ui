@@ -33,7 +33,7 @@ Add `sailui` to your `tailwind.config.js` file:
 module.exports = {
   // ...
   plugins: [
-    require('sailui')(),
+    require('sailui'),
   ]
 }
 

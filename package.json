@@ -1,6 +1,6 @@
 {
   "name": "sailui",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Basic UI components for Tailwind CSS.",
   "main": "src/sailui.js",
   "repository": "https://github.com/sailui/ui.git",
