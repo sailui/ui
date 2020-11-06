@@ -662,7 +662,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #2d3748;
+  background-color: #333333;
 }
 
 .btn-outline {
@@ -673,17 +673,8 @@ p {
 }
 
 .btn-outline:hover {
-  background-color: #2d3748;
+  background-color: #000;
   color: #fff;
-}
-
-.card {
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-width: 1px;
-  border-color: #edf2f7;
 }
 
 .badge {
@@ -695,6 +686,11 @@ p {
   border-radius: 0.25rem;
   font-size: 0.875rem;
   font-weight: 700;
+  background-color: #000;
+  color: #fff;
+}
+
+.badge-dark {
   background-color: #000;
   color: #fff;
 }
@@ -722,6 +718,15 @@ p {
 .badge-red {
   background-color: #f56565;
   color: #fff;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-width: 1px;
+  border-color: #edf2f7;
 }
 
 .alert {
@@ -795,8 +800,8 @@ p {
 
 .form-input:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-textarea {
@@ -832,8 +837,8 @@ p {
 
 .form-textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-multiselect {
@@ -854,8 +859,8 @@ p {
 
 .form-multiselect:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-select {
@@ -899,8 +904,8 @@ p {
 
 .form-select:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-checkbox:checked {
@@ -938,7 +943,7 @@ p {
   flex-shrink: 0;
   height: 1em;
   width: 1em;
-  color: #4299e1;
+  color: #000;
   background-color: #fff;
   border-color: #e2e8f0;
   border-width: 1px;
@@ -947,8 +952,8 @@ p {
 
 .form-checkbox:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-radio:checked {
@@ -987,7 +992,7 @@ p {
   border-radius: 100%;
   height: 1em;
   width: 1em;
-  color: #4299e1;
+  color: #000;
   background-color: #fff;
   border-color: #e2e8f0;
   border-width: 1px;
@@ -995,8 +1000,8 @@ p {
 
 .form-radio:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

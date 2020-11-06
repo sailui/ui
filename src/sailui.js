@@ -1,13 +1,21 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(function({addComponents, addUtilities, addBase, theme, postcss}) {
+module.exports = plugin(function ({addComponents, addUtilities, addBase, theme, postcss}) {
+  let sailTheme = require('./themes/sailTheme')({theme})
+  let formTheme = require('./themes/formTheme')({theme: sailTheme})
+
   addBase(require('./typography'))
 
-  addComponents(require('./components/btn'))
+  addComponents(require('./components/btn')({theme: sailTheme}))
+  addComponents(require('./components/badge')({theme: sailTheme}))
   addComponents(require('./components/card'))
-  addComponents(require('./components/badge'))
   addComponents(require('./components/alert'))
   addComponents(require('./components/container'))
 
-  require('@tailwindcss/custom-forms')({addUtilities, addComponents, theme, postcss})
+  require('@tailwindcss/custom-forms')({
+    addUtilities,
+    addComponents,
+    postcss,
+    theme: formTheme
+  })
 })

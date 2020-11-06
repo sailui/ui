@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // primary: '#ff6394'
+      }
+    },
   },
   variants: {},
   plugins: [
