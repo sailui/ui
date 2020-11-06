@@ -45,6 +45,22 @@ Start using Sail UI component classes just like how you're used to.
 <a href="/" class="btn"></a>
 ```
 
+### Customizing the primary color
+Simply add a `theme.colors.primary` key to your `tailwind.config.js` and Sail UI will use it as the default color
+for all available components:
+```js
+module.exports = {
+  // ...
+  theme: {
+    extend: {
+      colors: {
+         primary: '#ff6394'
+      }
+    }
+  }
+}
+```
+
 ## What's Included
 ### Basic Components
 These components are included:
