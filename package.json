@@ -17,6 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "tailwindcss": "^1.9.5",
     "@tailwindcss/custom-forms": "^0.2.1",
     "tinycolor2": "^1.4.2"
   },
