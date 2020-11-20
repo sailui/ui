@@ -767,6 +767,18 @@ p {
   margin-right: auto;
 }
 
+.link {
+  transition-property: color;
+  transition-duration: 200ms;
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #333333;
+}
+
 .form-input {
   -webkit-appearance: none;
      -moz-appearance: none;
