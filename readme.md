@@ -42,6 +42,13 @@ module.exports = {
 };
 ```
 
+### Compatibility
+| Tailwind CSS  | Sail UI |
+| ------- | ------- |
+| v1.9.0  | v0.4.0  |
+| v2.0.0  | v0.5.0  |
+
+
 ## Usage
 
 Start using Sail UI component classes just like how you're used to.

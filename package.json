@@ -1,6 +1,6 @@
 {
   "name": "sailui",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Basic UI components for Tailwind CSS.",
   "main": "src/sailui.js",
   "repository": "https://github.com/sailui/ui.git",
@@ -17,7 +17,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/forms": "^0.2.1",
     "tinycolor2": "^1.4.2"
   },
