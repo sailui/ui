@@ -159,7 +159,7 @@ complete details, but to summarize, these elements are available:
 ```html
 <label class="block">
   <span class="text-gray-700">Name</span>
-  <input class="form-input mt-1 block w-full" />
+  <input type="text" class="form-input mt-1 block w-full" />
 </label>
 ```
 

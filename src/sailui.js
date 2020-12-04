@@ -13,10 +13,6 @@ module.exports = plugin(function ({addComponents, addUtilities, addBase, theme, 
   addComponents(require('./components/container'))
   addComponents(require('./components/link')({theme: sailTheme}))
 
-  require('@tailwindcss/custom-forms')({
-    addUtilities,
-    addComponents,
-    postcss,
-    theme: formTheme
-  })
+  let forms = require('@tailwindcss/forms')
+  forms.handler({addBase, theme})
 })
