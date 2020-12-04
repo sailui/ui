@@ -142,11 +142,10 @@ These components are included:
 
 ### Forms
 
-Sail UI uses the [`custom-forms` plugin from Tailwind Labs](https://github.com/tailwindlabs/tailwindcss-custom-forms)
-to style form elements.
-
-You should refer to the [original documentation of `custom-forms`](https://tailwindcss-custom-forms.netlify.app/) for 
-complete details, but to summarize, these elements are available:
+Sail UI uses the [`forms` plugin from Tailwind Labs](https://github.com/tailwindlabs/tailwindcss-forms)
+to reset form styles.
+ 
+On top of the provided reset, these classes add an additional layer of styling to form elements:
 
 - [.form-input](#form-input)
 - [.form-select](#form-select)
