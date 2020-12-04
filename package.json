@@ -18,13 +18,18 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@tailwindcss/forms": "^0.2.1",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^2.0.0",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.0.9"
   },
   "peerDependencies": {
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^2.0.0",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.0.9"
   },
   "scripts": {
     "build": "npx tailwindcss build docs/styles.css -o docs/output.css -c docs/tailwind.config.js"
