@@ -1,18 +1,7 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  content: ["./**/*.html", "./index.html", "./docs/index.html"],
   theme: {
-    extend: {
-      colors: {
-        // primary: '#ff6394'
-      }
-    },
+    extend: {},
   },
-  variants: {},
-  plugins: [
-    require('../src/sailui'),
-  ],
+  plugins: [require('../src/sailui'),],
 }
