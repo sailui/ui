@@ -18,6 +18,6 @@ module.exports = plugin(function ({addComponents, addUtilities, addBase, theme, 
   addComponents(require('./components/form/radio')({theme: sailTheme}))
   addComponents(require('./components/form/textarea')({theme: sailTheme}))
 
-  let forms = require('@tailwindcss/forms')
+  let forms = require('@tailwindcss/forms')();
   forms.handler({addBase, theme})
 })
