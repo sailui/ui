@@ -1,23 +1,48 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(function ({addComponents, addUtilities, addBase, theme, postcss}) {
-  let sailTheme = require('./themes/sailTheme')({theme})
+module.exports = plugin.withOptions(function (options = {
+  exclude: [
 
-  addBase(require('./typography'))
+  ]
+}) {
+  return function ({ addComponents, addUtilities, addBase, theme, postcss }) {
+    let sailTheme = require('./themes/sailTheme')({ theme });
+    addBase(require('./typography'))
 
-  addComponents(require('./components/card'))
-  addComponents(require('./components/alert'))
-  addComponents(require('./components/container'))
-  addComponents(require('./components/btn')({theme: sailTheme}))
-  addComponents(require('./components/badge')({theme: sailTheme}))
-  addComponents(require('./components/link')({theme: sailTheme}))
+    if (!options.exclude.includes('alert')) {
+      addComponents(require('./components/alert'))
+    }
 
-  addComponents(require('./components/form/input')({theme: sailTheme}))
-  addComponents(require('./components/form/select')({theme: sailTheme}))
-  addComponents(require('./components/form/checkbox')({theme: sailTheme}))
-  addComponents(require('./components/form/radio')({theme: sailTheme}))
-  addComponents(require('./components/form/textarea')({theme: sailTheme}))
+    if (!options.exclude.includes('badge')) {
+      addComponents(require('./components/badge')({theme: sailTheme}))
+    }
 
-  let forms = require('@tailwindcss/forms')();
-  forms.handler({addBase, theme})
-})
+    if (!options.exclude.includes('btn')) {
+      addComponents(require('./components/btn')({ theme: sailTheme }))
+    }
+
+    if (!options.exclude.includes('card')) {
+      addComponents(require('./components/card'))
+    }
+
+    if (!options.exclude.includes('container')) {
+      addComponents(require('./components/container'))
+    }
+
+    if (!options.exclude.includes('link')) {
+      addComponents(require('./components/link')({ theme: sailTheme }))
+    }
+
+    if (!options.exclude.includes('forms')) {
+      addComponents(require('./components/form/checkbox')({ theme: sailTheme }))
+      addComponents(require('./components/form/input')({ theme: sailTheme }))
+      addComponents(require('./components/form/radio')({ theme: sailTheme }))
+      addComponents(require('./components/form/select')({ theme: sailTheme }))
+      addComponents(require('./components/form/textarea')({ theme: sailTheme }))
+
+      let forms = require('@tailwindcss/forms')()
+      forms.handler({ addBase, theme })
+    }
+
+  };
+});

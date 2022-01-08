@@ -221,6 +221,31 @@ On top of the provided reset, these classes add an additional layer of styling t
   <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Write something..."></textarea>
 </label>
 ```
+### Container
+
+The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind.
+
+### Excluding components
+
+Simply pass an object with an array `exclude` in it to the registering of the plugin in your `tailwind.config.js` :
+
+```js
+module.exports = {
+  // ...
+  plugins: [
+    require("sailui")({exclude: ['btn', 'alert']})
+  ],
+};
+```
+List of all components that can be excluded:
+
+- `alert`
+- `badge`
+- `btn`
+- `card`
+- `container`
+- `link`
+- `form` - excludes `checkbox`, `input`, `radio`, `select`, `textarea` and `@tailwindcss/forms` 
 
 ### Typography
 
@@ -235,9 +260,6 @@ These are the covered elements:
 - h6
 - p
 
-### Container
-
-The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind.
 
 ## License
 

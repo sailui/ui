@@ -633,23 +633,7 @@ p {
   margin-bottom: 1rem;
 }
 
-
-      [type='text'],
-      [type='email'],
-      [type='url'],
-      [type='password'],
-      [type='number'],
-      [type='date'],
-      [type='datetime-local'],
-      [type='month'],
-      [type='search'],
-      [type='tel'],
-      [type='time'],
-      [type='week'],
-      [multiple],
-      textarea,
-      select
-     {
+[type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -663,6 +647,7 @@ p {
   padding-left: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
 }
 
 [type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus {
@@ -674,7 +659,7 @@ p {
   --tw-ring-color: #2563eb;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   border-color: #2563eb;
 }
 
@@ -688,7 +673,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,textarea::placeholder {
   color: #6b7280;
   opacity: 1;
 }
@@ -721,10 +706,7 @@ select {
           color-adjust: unset;
 }
 
-
-      [type='checkbox'],
-      [type='radio']
-     {
+[type='checkbox'],[type='radio'] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -745,6 +727,7 @@ select {
   background-color: #fff;
   border-color: #6b7280;
   border-width: 1px;
+  --tw-shadow: 0 0 #0000;
 }
 
 [type='checkbox'] {
@@ -755,10 +738,7 @@ select {
   border-radius: 100%;
 }
 
-
-      [type='checkbox']:focus,
-      [type='radio']:focus
-     {
+[type='checkbox']:focus,[type='radio']:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -767,13 +747,10 @@ select {
   --tw-ring-color: #2563eb;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
-
-      [type='checkbox']:checked,
-      [type='radio']:checked
-     {
+[type='checkbox']:checked,[type='radio']:checked {
   border-color: transparent;
   background-color: currentColor;
   background-size: 100% 100%;
@@ -789,12 +766,7 @@ select {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
 }
 
-
-      [type='checkbox']:checked:hover,
-      [type='checkbox']:checked:focus,
-      [type='radio']:checked:hover,
-      [type='radio']:checked:focus
-     {
+[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus {
   border-color: transparent;
   background-color: currentColor;
 }
@@ -808,10 +780,7 @@ select {
   background-repeat: no-repeat;
 }
 
-
-      [type='checkbox']:indeterminate:hover,
-      [type='checkbox']:indeterminate:focus
-     {
+[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus {
   border-color: transparent;
   background-color: currentColor;
 }
@@ -864,15 +833,6 @@ select {
   }
 }
 
-.card {
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-width: 1px;
-  border-color: #edf2f7;
-}
-
 .alert {
   border-width: 1px;
   padding: 1rem;
@@ -904,53 +864,6 @@ select {
   background-color: #fff5f5;
   border-color: #fc8181;
   color: #c53030;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 200ms;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: #000;
-  color: #fff;
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-}
-
-.btn:hover {
-  background-color: #333333;
-}
-
-.btn:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  --tw-ring-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.6);
-  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
-  outline: none;
-}
-
-.btn-outline {
-  border-width: 1px;
-  border-color: #000;
-  color: #000;
-  background-color: transparent;
-}
-
-.btn-outline:hover {
-  background-color: #000;
-  color: #fff;
 }
 
 .badge {
@@ -996,6 +909,62 @@ select {
   color: #fff;
 }
 
+.btn {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #000;
+  color: #fff;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+}
+
+.btn:hover {
+  background-color: #333333;
+}
+
+.btn:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.6);
+  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+  outline: none;
+}
+
+.btn-outline {
+  border-width: 1px;
+  border-color: #000;
+  color: #000;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-width: 1px;
+  border-color: #edf2f7;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .link {
   transition-property: color;
   transition-duration: 200ms;
@@ -1006,36 +975,6 @@ select {
 
 .link:hover {
   color: #333333;
-}
-
-.form-input {
-  background-color: #fff;
-  border-color: #e2e8f0;
-  border-width: 1px;
-  border-radius: 0.25rem;
-}
-
-.form-input:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  --tw-ring-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.6);
-  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
-}
-
-.form-select {
-  background-color: #fff;
-  border-color: #e2e8f0;
-  border-width: 1px;
-  border-radius: 0.25rem;
-}
-
-.form-select:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  --tw-ring-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.6);
-  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
 }
 
 .form-checkbox {
@@ -1053,6 +992,21 @@ select {
   box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
 }
 
+.form-input {
+  background-color: #fff;
+  border-color: #e2e8f0;
+  border-width: 1px;
+  border-radius: 0.25rem;
+}
+
+.form-input:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.6);
+  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+}
+
 .form-radio {
   border-color: #e2e8f0;
   border-width: 1px;
@@ -1061,6 +1015,21 @@ select {
 }
 
 .form-radio:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.6);
+  box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+}
+
+.form-select {
+  background-color: #fff;
+  border-color: #e2e8f0;
+  border-width: 1px;
+  border-radius: 0.25rem;
+}
+
+.form-select:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   --tw-ring-color: rgba(0, 0, 0, 0.1);
