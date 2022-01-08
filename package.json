@@ -1,6 +1,6 @@
 {
   "name": "sailui",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Basic UI components for Tailwind CSS.",
   "main": "src/sailui.js",
   "repository": "https://github.com/sailui/ui.git",
@@ -21,12 +21,12 @@
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "tailwindcss": "^2.0.0",
+    "tailwindcss": "^3.0.0",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.0.9"
   },
   "peerDependencies": {
-    "tailwindcss": "^2.0.0",
+    "tailwindcss": "^3.0.0",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.0.9"
   },

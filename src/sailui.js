@@ -14,7 +14,6 @@ module.exports = plugin.withOptions(function (options = {
     }
 
     if (!options.exclude.includes('badge')) {
-
       addComponents(require('./components/badge')({theme: sailTheme}))
     }
 
